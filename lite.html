@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VantaScripts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(30,30,30,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-center {
+      display: flex;
+      gap: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+    }
+    .nav-center a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .search-bar {
+      margin-left: auto;
+    }
+    .search-bar input {
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      border: none;
+      background: #1a1a1a;
+      color: white;
+    }
+    .welcome {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      width: 220px;
+      box-shadow: 0 0 15px rgba(128,0,255,0.2);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #00ffcc;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+    .card h3 {
+      margin-top: 3rem;
+    }
+    .card .price {
+      margin: 1rem 0;
+    }
+    .card .view-btn {
+      background: #8000ff;
+      padding: 0.5rem 1.5rem;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 3rem 2rem 2rem;
+      font-size: 0.9rem;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-top: 1px solid #222;
+      padding-top: 2rem;
+    }
+    .footer-brand {
+      max-width: 300px;
+    }
+    .footer-nav, .footer-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-payments img {
+      height: 24px;
+      margin-left: 0.5rem;
+    }
+    .footer-social img {
+      height: 20px;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-center">
+      <a href="#">Home</a>
+      <a href="#">Scripts</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+  </nav>
+
+  <section class="welcome">
+    <h1>Welcome to VantaScripts</h1>
+    <p>Your premium script source.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <div class="badge">Undetected</div>
+      <h3>Lite Version</h3>
+      <p class="price">$4.99</p>
+      <button class="view-btn" onclick="location.href='lite.html'">View</button>
+    </div>
+    <div class="card">
+      <div class="badge" style="background: #ff00cc">Best Sale</div>
+      <h3>Full Version</h3>
+      <p class="price">$12.99</p>
+      <button class="view-btn" onclick="location.href='full.html'">View</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Vanta Logo" style="height: 40px; margin-bottom: 1rem;" />
+        <p>VantaScripts is your trusted source for premium scripts in one place. A wide selection of quality and undetected scripts at discounted prices — up to 70% off!</p>
+        <div class="footer-social">
+          <img src="youtube.png" alt="YouTube" />
+          <img src="discord.png" alt="Discord" />
+        </div>
+      </div>
+      <div class="footer-nav">
+        <strong>Navigation</strong>
+        <a href="#">Catalog</a>
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-info">
+        <strong>Information</strong>
+        <a href="#">User Agreement</a>
+        <a href="#">Offer Agreement</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 VantaScripts. All rights reserved.</span>
+      <div class="footer-payments">
+        <img src="visa.png" alt="Visa" />
+        <img src="paypal.png" alt="PayPal" />
+        <img src="bitcoin.png" alt="Bitcoin" />
+        <img src="qiwipay.png" alt="Qiwi" />
+        <img src="b2pay.png" alt="b2pay" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

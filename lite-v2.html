@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VantaScript Lite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .badge {
+      background-color: #5d5aff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      background-color: #1a1a1a;
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #5d5aff;
+      margin: 1rem 0;
+    }
+
+    button {
+      background-color: #5d5aff;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #4946d8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Lite Version</div>
+    <h1>VantaScript Lite</h1>
+    <p>Perfect for users who want essential features without breaking the bank.</p>
+    <ul>
+      <li>- Lightweight and fast</li>
+      <li>- Core script functionality</li>
+      <li>- Easy setup</li>
+    </ul>
+    <div class="price">$4.99</div>
+    <button onclick="alert('Purchase options coming soon!')">Buy Now</button>
+  </div>
+</body>
+</html>
